@@ -82,7 +82,6 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
-LIBS:esp-01-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -623,7 +622,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 900  3700 1000
 Wire Wire Line
-	3500 1000 3850 1000
+	3500 1000 4250 1000
 Wire Wire Line
 	3500 1000 3500 1050
 Wire Wire Line
@@ -632,7 +631,7 @@ Connection ~ 3700 1000
 Wire Wire Line
 	3500 1250 3500 1350
 Wire Wire Line
-	3500 1350 3850 1350
+	3500 1350 4250 1350
 Wire Wire Line
 	3850 1350 3850 1250
 Wire Wire Line
@@ -812,4 +811,21 @@ Wire Wire Line
 Wire Wire Line
 	850  3300 850  3400
 Connection ~ 850  3300
+$Comp
+L C_Small C4
+U 1 1 580FCE93
+P 4250 1150
+F 0 "C4" H 4260 1220 50  0000 L CNN
+F 1 "150uF" H 4260 1070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 4250 1150 50  0001 C CNN
+F 3 "" H 4250 1150 50  0000 C CNN
+	1    4250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1000 4250 1050
+Connection ~ 3850 1000
+Wire Wire Line
+	4250 1350 4250 1250
+Connection ~ 3850 1350
 $EndSCHEMATC
